@@ -1,3 +1,4 @@
+
 var TalkingClock = (function(){
 
     'use strict';
@@ -51,16 +52,16 @@ var TalkingClock = (function(){
             for (var word in data.words) {
                 data.words[word].status = false;
             }
-            this.setVerbage();
+            this.setVerbiage();
             this.setMinutes();
             this.setHours();
             this.setMeridian();
         },
-        setVerbage: function(){
+        setVerbiage: function(){
             var minutes = data.date.getMinutes();
             data.words.it.status = true;
             data.words.is.status = true;
-            data.words.oclock.status= true;
+            data.words.oclock.status = true;
             if ( (minutes >= 3) && ( minutes <= 38)){
                 data.words.past.status = true;
             } else if ( (minutes >= 39) && (minutes <= 57)){
@@ -165,8 +166,9 @@ var TalkingClock = (function(){
     };
 
     controller.start();
+    const update = controller.update.bind(controller);
 
-    setInterval(controller.update, 1000);
+    setInterval(update, 1000);
 
 })();
 

@@ -1,4 +1,4 @@
-# Talking Clock [![Build Status](https://travis-ci.org/mggwxyz/talking-clock.svg?branch=master)](https://travis-ci.org/mggwxyz/talking-clock)
+# Talking Clock
 A stylish clock that tells you what time it is
 
 ## Try It Out
@@ -19,7 +19,7 @@ The purpose of this project was to build my front end web development skills by 
 Clone the git repository into a directory using a terminal
 ```bash
 git clone https://github.com/mggwxyz/talking-clock.git
-````
+```
 
 Navigate into the new project directory
 ```bash
